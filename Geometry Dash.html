@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://geometrydashh.es/wp-content/uploads/games/html5/G/geometry-dash-lite/Game.html -->
+<html lang="en-US" style="--tts-highlight-color: #ffff0066; --tts-underline-color: #ff4000fe;" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Geometry Dash</title>
+    <meta name="description" content="Play Geometry Dash Lite Online For Free on Chromebook, PC, Windows, Desktop in Chrome and modern browsers.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  /* FastFont */
+  @font-face {
+    format("opentype");
+    font-family: FastFont;
+    font-weight: normal;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/FastFont/Fast_Sans.ttf")
+  }
+
+  /* OpenDyslexic */
+  @font-face {
+    format("opentype");
+    font-family: OpenDyslexic;
+    font-weight: normal;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/OpenDyslexic/OpenDyslexic-Regular.otf")
+  }
+  @font-face {
+    format("opentype");
+    font-family: OpenDyslexic;
+    font-weight: normal;
+    font-style: italic;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/OpenDyslexic/OpenDyslexic-Italic.otf")
+  }
+  @font-face {
+    format("opentype");
+    font-family: OpenDyslexic;
+    font-weight: bold;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/OpenDyslexic/OpenDyslexic-Bold.otf")
+  }
+  @font-face {
+    format("opentype");
+    font-family: OpenDyslexic;
+    font-weight: bold;
+    font-style: italic;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/OpenDyslexic/OpenDyslexic-BoldItalic.otf")
+  }
+  
+  /* Tahoma */
+  @font-face {
+    format("truetype");
+    font-family: Tahoma;
+    font-weight: normal;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/Tahoma/Tahoma-Regular.ttf")
+  }
+  @font-face {
+    format("truetype");
+    font-family: Tahoma;
+    font-weight: bold;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/Tahoma/Tahoma-Bold.ttf")
+  }
+
+  /* CenturyGothic */
+  @font-face {
+    format("truetype");
+    font-family: CenturyGothic;
+    font-weight: normal;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/CenturyGothic/CenturyGothic-Regular.ttf")
+  }
+  @font-face {
+    format("truetype");
+    font-family: CenturyGothic;
+    font-weight: bold;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/CenturyGothic/CenturyGothic-Bold.ttf")
+  }
+  
+  /* Calibri */
+  @font-face {
+    format("truetype");
+    font-family: Calibri;
+    font-weight: normal;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/Calibri/Calibri-Regular.ttf")
+  }
+  @font-face {
+    format("truetype");
+    font-family: Calibri;
+    font-weight: bold;
+    font-style: normal;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/Calibri/Calibri-Bold.ttf")
+  }
+
+  /* OpenSans */
+  @font-face {
+    format("woff");
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: 100%;
+    src: url("chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/fonts/OpenSans/OpenSans-Regular.woff")
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+      U+FEFF, U+FFFD;
+  }
+
+  
+        [data-font="Arial"] {
+          font-family: "Arial" !important;
+        }
+      
+
+        [data-font="Calibri"] {
+          font-family: "Calibri" !important;
+        }
+      
+
+        [data-font="Courier"] {
+          font-family: "Courier" !important;
+        }
+      
+
+        [data-font="CenturyGothic"] {
+          font-family: "CenturyGothic" !important;
+        }
+      
+
+        [data-font="Comic Sans MS"] {
+          font-family: "Comic Sans MS" !important;
+        }
+      
+
+        [data-font="Helvetica"] {
+          font-family: "Helvetica" !important;
+        }
+      
+
+        [data-font="Open Sans"] {
+          font-family: "Open Sans" !important;
+        }
+      
+
+        [data-font="Tahoma"] {
+          font-family: "Tahoma" !important;
+        }
+      
+
+        [data-font="OpenDyslexic"] {
+          font-family: "OpenDyslexic" !important;
+        }
+      
+
+        [data-font="Verdana"] {
+          font-family: "Verdana" !important;
+        }
+      
+
+        [data-font="FastFont"] {
+          font-family: "FastFont" !important;
+        }
+      
+</style><style title="oihhpemnlfdlkdhbiajjjkbbojdojchj"></style></head>
+
+<body data-window-focused-at="1777710561469" data-pixie-theme2="false" class="tts-highlight-status">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 102, 255));
+            overflow: hidden;
+        }
+
+        #gameContainer {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        canvas+* {
+            z-index: 2;
+        }
+
+        .container {
+            max-width: 1600px;
+            position: relative;
+        }
+
+        .posImg {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo {
+            position: absolute;
+            display: block;
+            max-width: 100vw;
+            max-height: 70vh;
+            top: 300px;
+        }
+
+        .pos_progress {
+            position: absolute;
+            bottom: 15%;
+            width: 100%;
+        }
+
+        .progress {
+            margin: 1.5em auto;
+            max-width: 436px;
+            height: auto;
+            display: none;
+            position: relative;
+        }
+
+        .full {
+            width: 97%;
+            transform-origin: top left;
+        }
+
+        .box_process {
+            width: 100%;
+        }
+
+        .process {
+            width: 98%;
+        }
+
+        .progress .posfull,
+        .progress .posbox {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .progress .posfull {
+            top: 8px;
+            z-index: 1;
+        }
+
+        .progress .posbox {
+            top: 0;
+            z-index: 2;
+        }
+
+        #loader {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 102, 255));
+        }
+
+        .pos_spinner {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-30%, -50%);
+        }
+
+        .spinner,
+        .spinner:after {
+            display: none;
+            border-radius: 50%;
+            width: 5em;
+            height: 5em;
+        }
+
+        .spinner {
+            margin: 10px;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-left: 1.1em solid #ffffff;
+            transform: translateZ(0);
+            animation: spinner-spin 1.1s infinite linear;
+        }
+
+        @keyframes spinner-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <div id="gameContainer" style="padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);"><canvas id="#canvas" style="width: 100%; height: 100%; cursor: default;" width="1374" height="620"></canvas></div>
+    <div id="loader" style="display: none;"><img class="logo" src="./Geometry Dash_files/loading.png">
+        <div class="spinner" style="display: none;"></div>
+        <div class=" pos_progress">
+            <div class="progress" style="display: block;">
+                <div class="posfull"><img class="full" src="./Geometry Dash_files/process_bar_back.png" style="transform: scaleX(1);"></div>
+                <div class="posbox"><img class="box_process" src="./Geometry Dash_files/process_bar_front.png"></div>
+            </div>
+        </div>
+        <script src="./Geometry Dash_files/UnityLoader.js"></script>
+        <script>
+            var gameInstance = UnityLoader.instantiate("gameContainer", "Build/GeometryDashLite.json", {
+                onProgress: UnityProgress
+            });
+
+            function UnityProgress(gameInstance, progress) {
+                if (!gameInstance.Module) {
+                    return;
+                }
+                const loader = document.querySelector("#loader");
+                if (!gameInstance.progress) {
+                    const progress = document.querySelector("#loader .progress");
+                    progress.style.display = "block";
+                    gameInstance.progress = progress.querySelector(".full");
+                    loader.querySelector(".spinner").style.display = "none";
+                }
+                gameInstance.progress.style.transform = `scaleX(${progress})`;
+                if (progress === 1 && !gameInstance.removeTimeout) {
+                    gameInstance.removeTimeout = setTimeout(function() {
+                        loader.style.display = "none";
+                    }, 2000);
+                }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let buttondiv = document.getElementsByTagName('button');
+                for (let i = 0; i < buttondiv.length; i++) {
+                    if (buttondiv[i].innerHTML == "OK") {
+                        buttondiv[i].click();
+                    }
+                }
+                setTimeout(function() {
+                    let buttonok = document.getElementsByTagName('button');
+                    for (let i = 0; i < buttondiv.length; i++) {
+                        if (buttonok[i].innerHTML == "OK") {
+                            buttonok[i].click();
+                        }
+                    }
+                }, 1000);
+            });
+        </script>
+        <script defer="" src="./Geometry Dash_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fa90b27fe55e220&quot;,&quot;version&quot;:&quot;2024.10.5&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;5da1daf9b43045c5b9b5eac6b5c1c259&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
+
+</div><div id="pixie-tts-widget-host"><template shadowrootmode="open">
+      <style>
+        :host {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          z-index: 2147483647;
+          font-family: 'Roboto', 'Inter', sans-serif;
+          user-select: none;
+          opacity: 0;
+          pointer-events: none;
+          transform: translateY(20px);
+          transition: opacity 0.3s cubic-bezier(0.2, 0, 0, 1), transform 0.3s cubic-bezier(0.2, 0, 0, 1);
+        }
+
+        :host(.visible) {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0);
+        }
+
+        .widget-container {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          background-color: #fdfcff;
+          border-radius: 9999px;
+          padding: 8px 12px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+          border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .widget-container {
+            background-color: #1a1c1e;
+            border-color: rgba(255, 255, 255, 0.1);
+          }
+        }
+
+        .md-icon-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          background: transparent;
+          color: #44474e;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          transition: background-color 0.2s, color 0.2s, transform 0.2s;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .md-icon-btn { color: #c4c6d0; }
+        }
+
+        .md-icon-btn:hover { background-color: rgba(68, 71, 78, 0.08); }
+        @media (prefers-color-scheme: dark) { .md-icon-btn:hover { background-color: rgba(196, 198, 208, 0.08); } }
+        .md-icon-btn:active { background-color: rgba(68, 71, 78, 0.12); transform: scale(0.95); }
+
+        .md-icon-btn.primary {
+          background-color: #005ac1;
+          color: #ffffff;
+          width: 48px;
+          height: 48px;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .md-icon-btn.primary:hover { background-color: #004b9e; box-shadow: 0 2px 6px rgba(0,0,0,0.25); }
+        .md-icon-btn.primary:active { background-color: #003a7a; }
+
+        @media (prefers-color-scheme: dark) {
+          .md-icon-btn.primary { background-color: #aec6ff; color: #002e69; }
+          .md-icon-btn.primary:hover { background-color: #d8e2ff; }
+        }
+
+        svg { width: 24px; height: 24px; fill: currentColor; }
+        .primary svg { width: 28px; height: 28px; }
+
+        .divider {
+          width: 1px;
+          height: 24px;
+          background-color: rgba(0, 0, 0, 0.12);
+          margin: 0 4px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .divider { background-color: rgba(255, 255, 255, 0.12); }
+        }
+
+        .md-icon-btn::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          background-color: currentColor;
+          border-radius: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          opacity: 0;
+          pointer-events: none;
+          transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .md-icon-btn:active::after {
+          transform: translate(-50%, -50%) scale(1.5);
+          opacity: 0.12;
+          transition: 0s;
+        }
+      </style>
+
+      <div class="widget-container">
+        <button class="md-icon-btn" id="prev-btn" aria-label="Previous Sentence" title="Previous Sentence">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M220-240v-480h80v480h-80Zm520 0L380-480l360-240v480Zm-80-240Zm0 114v-228L489-480l171 114Z"></path></svg>
+        </button>
+        <button class="md-icon-btn primary" id="play-pause-btn" aria-label="Play" title="Play/Pause">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"></path></svg>
+        </button>
+        <button class="md-icon-btn" id="next-btn" aria-label="Next Sentence" title="Next Sentence">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M660-240v-480h80v480h-80Zm-440 0v-480l360 240-360 240Zm80-240Zm0 114 171-114-171-114v228Z"></path></svg>
+        </button>
+        <div class="divider"></div>
+        <button class="md-icon-btn" id="stop-btn" aria-label="Stop" title="Stop">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-320h320v-320H320v320ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"></path></svg>
+        </button>
+      </div>
+    </template></div><div class="pixie-reader-highlighter-toolbar" style="display: none;"><div class="pixie-reader-highlight-button" style="display: none;"><img src="chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/ui/extra_accessibility_tools/highlighter_icon.svg" alt="Highlight"></div><div class="pixie-reader-highlight-delete-button" style="display: none;"><img src="chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/ui/extra_accessibility_tools/trash_icon.svg" width="20" height="20" alt="Delete"></div><div class="pixie-reader-color-options-container" style="display: none;"><div class="pixie-reader-color-option" data-color-value="#ff0000" data-color-name="highlight-ff0000" style="background-color: rgb(255, 0, 0);"></div><div class="pixie-reader-color-option" data-color-value="#ff8000" data-color-name="highlight-ff8000" style="background-color: rgb(255, 128, 0);"></div><div class="pixie-reader-color-option" data-color-value="#ffff00" data-color-name="highlight-ffff00" style="background-color: rgb(255, 255, 0);"></div><div class="pixie-reader-color-option" data-color-value="#00ff00" data-color-name="highlight-00ff00" style="background-color: rgb(0, 255, 0);"></div><div class="pixie-reader-color-option" data-color-value="#00ffff" data-color-name="highlight-00ffff" style="background-color: rgb(0, 255, 255);"></div><div class="pixie-reader-color-option" data-color-value="#0080ff" data-color-name="highlight-0080ff" style="background-color: rgb(0, 128, 255);"></div><div class="pixie-reader-color-option" data-color-value="#8000ff" data-color-name="highlight-8000ff" style="background-color: rgb(128, 0, 255);"></div><div class="pixie-reader-color-option" data-color-value="#ff00ff" data-color-name="highlight-ff00ff" style="background-color: rgb(255, 0, 255);"></div><div class="pixie-reader-color-option" data-color-value="#000000" data-color-name="highlight-000000" style="background-color: rgb(0, 0, 0);"></div><div class="pixie-reader-color-option" data-color-value="#ffffff" data-color-name="highlight-ffffff" style="background-color: rgb(255, 255, 255);"></div></div></div><div id="clearly-root"><iframe id="clearly-container" referrerpolicy="origin-when-cross-origin" allowfullscreen="" src="./Geometry Dash_files/saved_resource.html"></iframe></div><script src="blob:https://geometrydashh.es/fb09a388-171f-45f2-b759-e8a0d94abb33" id="fc9c9a538b862cc62b2017edfe9452bd"></script></body></html>
